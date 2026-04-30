@@ -1,0 +1,78 @@
+#  Proyecto: Series de Taylor en C++
+
+- Descripción
+
+Este programa permite calcular aproximaciones de funciones matemáticas usando **series de Taylor**.  
+El usuario puede elegir entre seno, coseno, exponencial y logaritmo, ingresando el valor de \( x \) y la cantidad de términos.
+
+El objetivo del proyecto es aplicar programación modular en C++ y automatizar la compilación usando Make.
+
+---
+
+ Estructura del proyecto
+├── main.cpp → Controla la ejecución del programa
+├── Taylor.cpp → Implementación de las funciones
+├── Taylor.h → Declaración de funciones
+├── Makefile → Automatiza compilación y ejecución
+
+
+---
+
+-Funciones implementadas
+
+- Seno: `senoTaylor(x, n)`
+- Coseno: `cosenoTaylor(x, n)`
+- Exponencial: `exponencialTaylor(x, n)`
+- Logaritmo: `logaritmoTaylor(x, n)` (ln(1+x))
+- FunciON auxiliar: `factorial(n)`
+
+---
+
+ Cómo ejecutar el programa
+
+ 1. Compilar
+
+`bash
+make build
+2. Ejecutar
+make run
+3. Limpiar archivos
+make clean
+
+-Compatibilidad
+
+El programa funciona en:
+
+Windows
+Linux
+El Makefile detecta automáticamente el sistema operativo y ajusta el ejecutable.
+
+- Requisitos
+Compilador g++
+Herramienta make
+
+En Windows se puede usar:
+
+MinGW
+MSYS2
+Git Bash
+
+-Funcionamiento
+El usuario selecciona una opción del menú.
+Ingresa el valor de x.
+Ingresa la cantidad de términos.
+El programa calcula la aproximación usando ciclos.
+
+ -Consideraciones
+Para el logaritmo, x debe ser mayor que -1.
+Más términos = mejor aproximación.
+Si los términos son menores o iguales a 0, se muestra un error.
+- Objetivo
+Aplicar funciones en C++
+Separar código en .h y .cpp
+Usar series de Taylor
+Automatizar compilación con Make
+- Autor
+
+------JOSE SIMON ROSAS CORREA------
+------EDGAR PARRA--------
